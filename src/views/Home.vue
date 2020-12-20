@@ -121,7 +121,7 @@
     />
     <AppMenuTopo />
 
-    <div class="flex justify-start pt-64 sm:justify-center">
+    <div class="flex justify-center pt-64">
       <h1
         class="text-3xl font-semibold text-gray-200 titulo animate__animated animate__bounceInUp animate__slow"
       >

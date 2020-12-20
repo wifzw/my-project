@@ -22,7 +22,7 @@
                 style="white-space: nowrap !important;"
               >
                 <a
-                  href="http://localhost:8080/#/quem-sou-eu"
+                  href="http://localhost:8080/#/sobre"
                   class="px-3 py-2 text-sm font-medium text-gray-300 transition duration-700 ease-in-out rounded-md hover:text-white hover:bg-gray-800 focus:outline-none focus:text-white focus:bg-gray-700"
                   style="cursor: pointer !important;"
                   >Quem sou eu ?</a
@@ -34,6 +34,7 @@
                   >Certificados / Cursos</a
                 >
                 <a
+                  href="http://localhost:8080/#/contatos"
                   class="px-3 py-2 ml-4 text-sm font-medium text-gray-300 transition duration-700 ease-in-out rounded-md hover:text-white hover:bg-gray-800 focus:outline-none focus:text-white focus:bg-gray-700"
                   style="cursor: pointer !important;"
                   >Contato</a

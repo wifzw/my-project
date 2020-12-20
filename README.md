@@ -1,34 +1,11 @@
-# projeto
+# Olá, sejam todos bem vindo ao meu projeto
 
-## Project setup
-```
-yarn install
-```
+Esse respositório / projeto foi desenvolvido com intuito de aprimorar minhas técnicas e ao longo prazo ver minhas melhorias no futuro.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+Nesse projeto foi utilizado:
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Run your end-to-end tests
-```
-yarn test:e2e
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Vue JS
+- TailwindCSS
+- Particles JS
+- Vuetify (não era necessário por conta do tailwindCSS mais coloquei por conta dos componentes fascinante que eles tem)
+- Embreve vuex (integração com a store)

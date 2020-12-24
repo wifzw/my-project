@@ -8,13 +8,13 @@
         //    value: '#000'
         // }
         // },
-        fpsLimit: 60,
+        fpsLimit: 30,
         particles: {
           number: {
-            value: 550,
+            value: 350,
             density: {
               enable: true,
-              value_area: 800
+              value_area: 640
             }
           },
           color: {
@@ -59,7 +59,7 @@
             enable: false,
             distance: 150,
             color: '#518a8e',
-            opacity: 0.4,
+            opacity: 0.3,
             width: 1
           },
           move: {
@@ -72,8 +72,8 @@
             bounce: false,
             attract: {
               enable: false,
-              rotateX: 600,
-              rotateY: 600
+              rotateX: 400,
+              rotateY: 400
             }
           }
         },

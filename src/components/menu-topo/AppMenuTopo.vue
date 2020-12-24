@@ -1,60 +1,55 @@
 <template>
-  <div
-    class="inset-x-0 top-0 flex items-center text-gray-200 bg-gray-900 border-b-2 border-gray-800 z-100 lg:border-b-0 animate__animated animate__bounceInDown animate__slow"
+  <v-row
+    class="inset-x-0 top-0 flex items-center mt-2 text-gray-200 bg-gray-900 border-b-2 border-gray-800 app-menu-topo animate__animated animate__bounceInDown animate__slow"
   >
-    <div class="relative w-full px-12 mx-auto">
-      <div
-        class="flex flex-col justify-center h-24 lg:border-b-2 lg:border-gray-800"
-      >
-        <div class="flex items-center -mx-6">
-          <div class="pl-6 pr-6 lg:w-1/4 xl:w-1/5">
-            <div class="flex items-center">
-              <a href=" " class="block">
-                <h1
-                  class="mr-4 font-sans text-3xl font-medium animate-pulse"
-                  style="white-space: nowrap !important;"
-                >
-                  Kauan Motta
-                </h1>
-              </a>
-              <div
-                class="hidden lg:flex"
-                style="white-space: nowrap !important;"
-              >
-                <a
-                  href="http://localhost:8080/#/sobre"
-                  class="px-3 py-2 text-sm font-medium text-gray-300 transition duration-700 ease-in-out rounded-md hover:text-white hover:bg-gray-800 focus:outline-none focus:text-white focus:bg-gray-700"
-                  style="cursor: pointer !important;"
-                  >Quem sou eu ?</a
-                >
-                <a
-                  href="http://localhost:8080/#/cursos"
-                  class="px-3 py-2 ml-4 text-sm font-medium text-gray-300 transition duration-700 ease-in-out rounded-md hover:text-white hover:bg-gray-800 focus:outline-none focus:text-white focus:bg-gray-700"
-                  style="cursor: pointer !important;"
-                  >Certificados / Cursos</a
-                >
-                <a
-                  href="http://localhost:8080/#/contatos"
-                  class="px-3 py-2 ml-4 text-sm font-medium text-gray-300 transition duration-700 ease-in-out rounded-md hover:text-white hover:bg-gray-800 focus:outline-none focus:text-white focus:bg-gray-700"
-                  style="cursor: pointer !important;"
-                  >Contato</a
-                >
-                <a
-                  target="_blank"
-                  href="https://dev.hubvet.app"
-                  class="px-3 py-2 ml-4 text-sm font-medium text-gray-300 transition duration-700 ease-in-out rounded-md hover:text-white hover:bg-gray-800 focus:outline-none focus:text-white focus:bg-gray-700"
-                  style="cursor: pointer !important;"
-                  >Hubvet</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <v-col cols="12">
+      <v-row no-gutters>
+        <v-col class="justify-end ml-6 flex-grow-1 flex-shrink-1 d-flex">
+          <v-btn
+            v-for="(itemMenu, indice) in itensMenu"
+            :key="indice"
+            class="ml-6 mt-n3 text-capitalize accent--text text--lighten-2 customHover"
+            :class="itemMenu.pulse ? 'animate-pulse' : ''"
+            :href="itemMenu.link"
+            text
+          >
+            {{ itemMenu.nome }}
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-col>
+  </v-row>
+  <!-- </div> -->
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    itensMenu: [
+      {
+        nome: "Kauan Motta",
+        link: "/#/",
+        pulse: true,
+        icon: " mdi-badge-account-alert-outline"
+      },
+      { nome: "Quem sou eu ?", link: "http://localhost:8080/#/sobre" },
+      { nome: "Certificados / Cursos", link: "http://localhost:8080/#/cursos" },
+      { nome: "Contato", link: "http://localhost:8080/#/contatos" },
+      { nome: "Hubvet", link: "https://dev.hubvet.app" }
+    ]
+  }),
+  methods: {
+    object(item) {
+      console.log(item);
+    }
+  }
+};
 </script>
+
+<style lang="sass">
+.app-menu-topo
+  .customHover::before
+    background-color: transparent !important
+  .btn-active-opacity
+    background-color: transparent !important
+</style>

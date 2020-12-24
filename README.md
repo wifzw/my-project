@@ -8,4 +8,4 @@ Nesse projeto foi utilizado:
 - TailwindCSS (Será removido mais pra frente)
 - Particles JS
 - Vuetify
-- Embreve vuex (integração com a store)
+- Embreve vuex

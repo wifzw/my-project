@@ -5,7 +5,7 @@ Esse respositório / projeto foi desenvolvido com intuito de aprimorar minhas t�
 Nesse projeto foi utilizado:
 
 - Vue JS
-- TailwindCSS
+- TailwindCSS (Será removido mais pra frente)
 - Particles JS
-- Vuetify (não era necessário por conta do tailwindCSS mais coloquei por conta dos componentes fascinante que eles tem)
-- Embreve vuex (integração com a store)
+- Vuetify
+- Embreve vuex
